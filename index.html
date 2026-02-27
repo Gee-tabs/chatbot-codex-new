@@ -3,129 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Avatar Chatbot – Multi‑Media Stage</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Crystal Prompter – AI Avatar Chatbot Widget</title>
+    <link rel="stylesheet" href="widget.css" />
   </head>
   <body>
-    <div class="bg-orbit" aria-hidden="true"></div>
-    <header class="topbar">
-      <div class="brand">
-        <div class="brand-mark">A</div>
+    <div class="site">
+      <header class="site-nav">
+        <div class="logo">Crystal Prompter</div>
+        <nav class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#product">Product</a>
+          <a href="#about">About Us</a>
+          <a href="#reviews">Product Review</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+        <button class="nav-cta">Log In</button>
+      </header>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="kicker">Crystal Prompter</p>
+          <h1>AI Avatar Chatbot Showcase</h1>
+          <p class="sub">
+            Floating assistant for sales help, onboarding, product guidance, and support.
+            The demo uses a scripted knowledge base with local text‑to‑speech.
+          </p>
+          <div class="hero-actions">
+            <button class="ghost">View Products</button>
+            <button class="primary">Talk to AI Agent Daniel</button>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="info-block">
+            <p class="info-label">Top picks</p>
+            <p class="info-value">Tab 12 • Cue 24 • Mime 32 • Framer 32</p>
+          </div>
+          <div class="info-block">
+            <p class="info-label">Use cases</p>
+            <p class="info-value">Creators • Teams • Studios • On‑location shoots</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <button class="cp-launcher" id="launcher" aria-label="Open Crystal Prompter assistant">
+      <img src="avatar-ai.png" alt="AI Agent Daniel" />
+      <span class="status-ring" aria-hidden="true"></span>
+    </button>
+
+    <aside class="cp-widget" id="widget" aria-label="Crystal Prompter assistant">
+      <div class="cp-header">
         <div>
-          <div class="brand-title">Atlas Avatar</div>
-          <div class="brand-sub">Multimodal concierge</div>
+          <h2>Crystal Prompter</h2>
+        </div>
+        <button class="cp-close" id="closeWidget" aria-label="Close">×</button>
+      </div>
+
+      <div class="cp-body">
+        <div class="left-stack">
+          <div class="cp-panel avatar-panel">
+            <div class="panel-frame">
+              <div class="avatar-stage">
+                <video class="avatar-video" src="avatar-ai.mp4" autoplay playsinline></video>
+              </div>
+              <p class="avatar-name"><span class="online-dot"></span>AI Agent Daniel</p>
+            </div>
+          </div>
+
+          <div class="cp-panel action-panel">
+            <div class="prompter-list">
+              <button class="prompter-item" data-mode="text"><span>Product Overview</span><span class="arrow">→</span></button>
+              <button class="prompter-item" data-mode="photos"><span>Product Gallery</span><span class="arrow">→</span></button>
+              <button class="prompter-item" data-mode="slides"><span>Watch Videos</span><span class="arrow">→</span></button>
+              <button class="prompter-item" data-mode="videos"><span>3D View</span><span class="arrow">→</span></button>
+              <button class="prompter-item" data-mode="model"><span>Price Guide</span><span class="arrow">→</span></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cp-panel showcase-panel">
+          <div class="showcase-stage" id="showcaseStage">
+            <div class="showcase-placeholder">
+              <div class="showcase-icon">◆</div>
+              <p>Select a mode to display the asset.</p>
+            </div>
+          </div>
         </div>
       </div>
-      <nav class="top-actions">
-        <button class="chip is-active">Live</button>
-        <button class="chip">Studio</button>
-        <button class="chip">Analytics</button>
-      </nav>
-      <div class="top-right">
-        <button class="ghost">Share</button>
-        <button class="primary">New Session</button>
+
+      <div class="input-row" aria-label="Ask anything">
+        <input type="text" placeholder="Ask Anything" />
+        <div class="input-actions">
+          <button class="icon-btn" data-action="send" aria-label="Send">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 12L20 4l-4 8 4 8-16-8z" fill="currentColor" />
+            </svg>
+          </button>
+          <button class="icon-btn" data-action="mic" aria-label="Voice input">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 14a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v5a3 3 0 0 0 3 3z" fill="currentColor"/>
+              <path d="M19 11a7 7 0 1 1-14 0h2a5 5 0 1 0 10 0h2z" fill="currentColor"/>
+            </svg>
+          </button>
+          <button class="icon-btn" data-action="speaker" aria-label="Toggle sound">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 9h4l5-4v14l-5-4H4V9z" fill="currentColor"/>
+              <path d="M16.5 8.5a4.5 4.5 0 0 1 0 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
       </div>
-    </header>
+    </aside>
 
-    <main class="layout">
-      <section class="panel avatar">
-        <div class="panel-header">
-          <h2>Avatar</h2>
-          <span class="status">Ready</span>
-        </div>
-        <div class="avatar-stage">
-          <div class="avatar-ring"></div>
-          <div class="avatar-face">
-            <div class="avatar-eyes">
-              <span></span><span></span>
-            </div>
-            <div class="avatar-mouth"></div>
-          </div>
-          <div class="avatar-caption">Lip‑sync + gesture layer</div>
-        </div>
-        <div class="panel-block">
-          <div class="label">Mode</div>
-          <div class="segmented">
-            <button class="seg is-active">Guided</button>
-            <button class="seg">Exploratory</button>
-            <button class="seg">Silent</button>
-          </div>
-        </div>
-        <div class="panel-block">
-          <div class="label">Controls</div>
-          <div class="control-grid">
-            <button class="ghost">Calm</button>
-            <button class="ghost">Focus</button>
-            <button class="ghost">Reset</button>
-            <button class="ghost">Hand‑off</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="panel stage">
-        <div class="panel-header">
-          <h2>Content Stage</h2>
-          <div class="stage-tabs" role="tablist">
-            <button class="tab is-active" data-filter="all">All</button>
-            <button class="tab" data-filter="image">Photos</button>
-            <button class="tab" data-filter="video">Videos</button>
-            <button class="tab" data-filter="slides">Slides</button>
-            <button class="tab" data-filter="model">3D</button>
-          </div>
-        </div>
-
-        <div class="stage-view" id="stageView">
-          <div class="stage-placeholder">
-            <div class="stage-title">Select an asset to display</div>
-            <div class="stage-sub">The avatar speaks while the asset is shown — no descriptive text.</div>
-          </div>
-        </div>
-
-        <div class="shelf" id="assetShelf" aria-label="Asset shelf"></div>
-      </section>
-
-      <section class="panel chat">
-        <div class="panel-header">
-          <h2>Conversation</h2>
-          <span class="status">Session 04</span>
-        </div>
-        <div class="chat-feed" id="chatFeed">
-          <div class="msg avatar">
-            <div class="bubble">Hi! Ask for a product tour, training video, slide deck, or a 3D model.</div>
-          </div>
-          <div class="msg user">
-            <div class="bubble">Show the assembly steps and the exploded view.</div>
-          </div>
-          <div class="msg avatar">
-            <div class="bubble">On it. I’ll display the slides, then the model.</div>
-          </div>
-          <div class="msg avatar attachment">
-            <div class="asset-card" data-id="slides-1">
-              <div class="thumb slides"></div>
-              <div>
-                <div class="asset-title">Assembly Deck</div>
-                <div class="asset-meta">Slides • 18 frames</div>
-              </div>
-            </div>
-          </div>
-          <div class="msg avatar attachment">
-            <div class="asset-card" data-id="model-1">
-              <div class="thumb model"></div>
-              <div>
-                <div class="asset-title">Exploded View</div>
-                <div class="asset-meta">3D • GLB</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="composer">
-          <button class="ghost">+ Asset</button>
-          <input type="text" placeholder="Ask or drop an asset…" />
-          <button class="primary">Send</button>
-        </div>
-      </section>
-    </main>
-
-    <script src="app.js"></script>
+    <script src="widget.js"></script>
   </body>
 </html>
