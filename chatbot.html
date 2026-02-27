@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crystal Prompter – AI Avatar Chatbot</title>
+    <link rel="stylesheet" href="chatbot.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="chatbot-shell" aria-label="AI avatar chatbot">
+        <div class="shell-main">
+          <div class="panel avatar-panel" aria-label="Avatar display">
+            <div class="panel-frame">
+              <div class="avatar-stage" role="img" aria-label="Avatar placeholder">
+                <div class="avatar-orb"></div>
+                <div class="avatar-mouth"></div>
+                <span class="avatar-label">Avatar</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel prompter-panel" aria-label="Crystal Prompter">
+            <div class="prompter-head">
+              <span>Crystal Prompter</span>
+              <span class="prompter-dot"></span>
+            </div>
+            <div class="prompter-list">
+              <button class="prompter-item"><span>Text</span><span class="arrow">→</span></button>
+              <button class="prompter-item"><span>Photos</span><span class="arrow">→</span></button>
+              <button class="prompter-item"><span>Slides</span><span class="arrow">→</span></button>
+              <button class="prompter-item"><span>Videos</span><span class="arrow">→</span></button>
+              <button class="prompter-item"><span>3D Modeling</span><span class="arrow">→</span></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="chip-row" aria-label="Examples">
+          <button class="chip">Example</button>
+          <button class="chip">Example</button>
+          <button class="chip">Example</button>
+          <button class="chip">Example</button>
+          <button class="chip">Example</button>
+        </div>
+
+        <div class="input-row" aria-label="Ask anything">
+          <input type="text" placeholder="Ask Anything" />
+          <button class="send" aria-label="Send">
+            <span>Send</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 12L20 4l-4 8 4 8-16-8z" fill="currentColor" />
+            </svg>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="chatbot.js"></script>
+  </body>
+</html>

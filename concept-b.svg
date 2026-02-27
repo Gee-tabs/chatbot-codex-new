@@ -1,0 +1,117 @@
+<svg width="1200" height="1600" viewBox="525 100 550 860" fill="none" xmlns="http://www.w3.org/2000/svg" overflow="hidden">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF5E9"/>
+      <stop offset="0.5" stop-color="#F3F6FF"/>
+      <stop offset="1" stop-color="#F0FAF6"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F7F9FC"/>
+    </linearGradient>
+    <linearGradient id="stage" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B0E12"/>
+      <stop offset="1" stop-color="#1F2A3D"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0A0F19" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1360" cy="160" r="180" fill="#14B8A6" opacity="0.12"/>
+  <circle cx="220" cy="140" r="140" fill="#F59E0B" opacity="0.12"/>
+
+  <text x="80" y="70" font-family="Space Grotesk, Inter, sans-serif" font-size="28" fill="#0B0E12" font-weight="700">AI Avatar Chatbot – Layout Concepts</text>
+  <text x="80" y="100" font-family="Space Grotesk, Inter, sans-serif" font-size="14" fill="#2C3440">Assets are shown directly in the stage. Text only coordinates actions.</text>
+
+  <!-- Concept A -->
+  <g filter="url(#shadow)">
+    <rect x="60" y="140" width="470" height="780" rx="28" fill="url(#card)" stroke="#E2E8F0"/>
+  </g>
+  <text x="90" y="180" font-family="Space Grotesk, Inter, sans-serif" font-size="16" fill="#0B0E12" font-weight="600">Concept A – Balanced Tri‑Panel</text>
+  <text x="90" y="205" font-family="Space Grotesk, Inter, sans-serif" font-size="12" fill="#4B5563">Avatar + Stage + Chat with asset shelf</text>
+
+  <rect x="90" y="230" width="410" height="50" rx="12" fill="#111827" opacity="0.9"/>
+  <circle cx="120" cy="255" r="12" fill="#F9FAFB"/>
+  <rect x="140" y="245" width="120" height="8" rx="4" fill="#E5E7EB"/>
+  <rect x="270" y="245" width="60" height="8" rx="4" fill="#14B8A6"/>
+  <rect x="338" y="245" width="60" height="8" rx="4" fill="#F59E0B"/>
+
+  <rect x="90" y="300" width="115" height="520" rx="18" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="105" y="320" width="85" height="140" rx="16" fill="url(#stage)"/>
+  <circle cx="147.5" cy="380" r="32" fill="#F9FAFB"/>
+  <rect x="118" y="450" width="60" height="8" rx="4" fill="#CBD5F5"/>
+  <rect x="118" y="465" width="60" height="8" rx="4" fill="#CBD5F5"/>
+
+  <rect x="220" y="300" width="280" height="360" rx="18" fill="url(#stage)"/>
+  <rect x="235" y="320" width="250" height="20" rx="10" fill="#1F2937"/>
+  <rect x="235" y="350" width="250" height="280" rx="14" fill="#0F172A"/>
+  <rect x="235" y="640" width="120" height="10" rx="5" fill="#14B8A6"/>
+
+  <rect x="220" y="675" width="280" height="145" rx="18" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="235" y="692" width="150" height="10" rx="5" fill="#E2E8F0"/>
+  <rect x="235" y="712" width="200" height="10" rx="5" fill="#E2E8F0"/>
+  <rect x="235" y="735" width="200" height="10" rx="5" fill="#111827"/>
+  <rect x="235" y="756" width="160" height="10" rx="5" fill="#E2E8F0"/>
+
+  <rect x="90" y="830" width="410" height="60" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="105" y="847" width="90" height="26" rx="13" fill="#111827"/>
+  <rect x="205" y="847" width="90" height="26" rx="13" fill="#14B8A6"/>
+  <rect x="305" y="847" width="90" height="26" rx="13" fill="#F59E0B"/>
+
+  <!-- Concept B -->
+  <g filter="url(#shadow)">
+    <rect x="565" y="140" width="470" height="780" rx="28" fill="url(#card)" stroke="#E2E8F0"/>
+  </g>
+  <text x="595" y="180" font-family="Space Grotesk, Inter, sans-serif" font-size="16" fill="#0B0E12" font-weight="600">Concept B – Stage‑First Canvas</text>
+  <text x="595" y="205" font-family="Space Grotesk, Inter, sans-serif" font-size="12" fill="#4B5563">Full stage with floating avatar + chat dock</text>
+
+  <rect x="595" y="230" width="410" height="420" rx="22" fill="url(#stage)"/>
+  <rect x="615" y="250" width="160" height="18" rx="9" fill="#1F2937"/>
+  <rect x="615" y="276" width="370" height="330" rx="16" fill="#0F172A"/>
+  <rect x="835" y="260" width="150" height="30" rx="15" fill="#14B8A6"/>
+
+  <rect x="610" y="315" width="120" height="180" rx="18" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="625" y="335" width="90" height="90" rx="16" fill="url(#stage)"/>
+  <circle cx="670" cy="380" r="18" fill="#F9FAFB"/>
+  <rect x="625" y="435" width="60" height="8" rx="4" fill="#CBD5F5"/>
+
+  <rect x="595" y="670" width="410" height="240" rx="20" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="615" y="690" width="240" height="12" rx="6" fill="#111827"/>
+  <rect x="615" y="715" width="280" height="10" rx="5" fill="#E2E8F0"/>
+  <rect x="615" y="740" width="200" height="10" rx="5" fill="#E2E8F0"/>
+  <rect x="615" y="775" width="360" height="50" rx="12" fill="#F3F4F6"/>
+  <rect x="615" y="840" width="90" height="30" rx="15" fill="#111827"/>
+  <rect x="715" y="840" width="90" height="30" rx="15" fill="#14B8A6"/>
+  <rect x="815" y="840" width="90" height="30" rx="15" fill="#F59E0B"/>
+
+  <!-- Concept C -->
+  <g filter="url(#shadow)">
+    <rect x="1070" y="140" width="470" height="780" rx="28" fill="url(#card)" stroke="#E2E8F0"/>
+  </g>
+  <text x="1100" y="180" font-family="Space Grotesk, Inter, sans-serif" font-size="16" fill="#0B0E12" font-weight="600">Concept C – Gallery + Focus Mode</text>
+  <text x="1100" y="205" font-family="Space Grotesk, Inter, sans-serif" font-size="12" fill="#4B5563">Asset rail with focus toggle + compact chat</text>
+
+  <rect x="1100" y="230" width="410" height="60" rx="14" fill="#111827"/>
+  <rect x="1120" y="250" width="180" height="10" rx="5" fill="#E5E7EB"/>
+  <rect x="1320" y="245" width="80" height="20" rx="10" fill="#14B8A6"/>
+  <rect x="1410" y="245" width="80" height="20" rx="10" fill="#F59E0B"/>
+
+  <rect x="1100" y="310" width="410" height="320" rx="22" fill="url(#stage)"/>
+  <rect x="1120" y="330" width="370" height="260" rx="16" fill="#0F172A"/>
+  <rect x="1120" y="600" width="120" height="10" rx="5" fill="#14B8A6"/>
+
+  <rect x="1100" y="650" width="410" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="1115" y="668" width="70" height="54" rx="10" fill="#E2E8F0"/>
+  <rect x="1195" y="668" width="70" height="54" rx="10" fill="#C7D2FE"/>
+  <rect x="1275" y="668" width="70" height="54" rx="10" fill="#FDE68A"/>
+  <rect x="1355" y="668" width="70" height="54" rx="10" fill="#BBF7D0"/>
+  <rect x="1435" y="668" width="70" height="54" rx="10" fill="#E2E8F0"/>
+
+  <rect x="1100" y="760" width="410" height="160" rx="20" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="1120" y="780" width="220" height="10" rx="5" fill="#111827"/>
+  <rect x="1120" y="805" width="260" height="10" rx="5" fill="#E2E8F0"/>
+  <rect x="1120" y="830" width="300" height="10" rx="5" fill="#E2E8F0"/>
+  <rect x="1120" y="860" width="300" height="40" rx="12" fill="#F3F4F6"/>
+</svg>

@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600&display=swap");
+
+:root {
+  --ink: #0b1220;
+  --ink-soft: #475569;
+  --panel: #ffffff;
+  --panel-muted: #f8fafc;
+  --border: #e5e7eb;
+  --accent: #14b8a6;
+  --accent-deep: #0f766e;
+  --shadow: 0 22px 50px rgba(15, 23, 42, 0.12);
+  --radius-xl: 28px;
+  --radius-lg: 22px;
+  --radius-md: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Sora", system-ui, sans-serif;
+  background: radial-gradient(circle at top left, #fdf6ec 0%, #f1f6ff 45%, #f2fbf7 100%);
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+.page {
+  padding: 64px 24px;
+  display: grid;
+  place-items: center;
+}
+
+.chatbot-shell {
+  width: min(1100px, 100%);
+  background: var(--panel);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 32px;
+  display: grid;
+  gap: 24px;
+}
+
+.shell-main {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 24px;
+}
+
+.panel {
+  background: var(--panel-muted);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  padding: 20px;
+  display: grid;
+  gap: 18px;
+}
+
+.panel-frame {
+  background: #fff;
+  border-radius: var(--radius-md);
+  padding: 18px;
+  border: 1px solid var(--border);
+}
+
+.avatar-stage {
+  height: 190px;
+  border-radius: 18px;
+  background: linear-gradient(140deg, #0b1220 0%, #1d2a44 100%);
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar-orb {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #f8fafc;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.35);
+}
+
+.avatar-mouth {
+  position: absolute;
+  bottom: 58px;
+  width: 90px;
+  height: 8px;
+  border-radius: 999px;
+  background: #c7d2fe;
+}
+
+.avatar-label {
+  position: absolute;
+  bottom: 18px;
+  font-size: 14px;
+  color: #e2e8f0;
+}
+
+.prompter-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.prompter-head span:first-child {
+  font-family: "Fraunces", serif;
+  font-size: 18px;
+}
+
+.prompter-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 12px rgba(20, 184, 166, 0.45);
+}
+
+.prompter-list {
+  display: grid;
+  gap: 14px;
+}
+
+.prompter-item {
+  border: 1px solid var(--border);
+  background: #fff;
+  padding: 12px 16px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font: inherit;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.prompter-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+.prompter-item.is-active {
+  border-color: rgba(20, 184, 166, 0.55);
+  box-shadow: 0 0 0 2px rgba(20, 184, 166, 0.2);
+}
+
+.arrow {
+  color: var(--accent-deep);
+  font-weight: 700;
+}
+
+.chip-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #f8fafc;
+  font: inherit;
+  cursor: pointer;
+}
+
+.input-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 12px 16px;
+  background: #fff;
+}
+
+.input-row input {
+  border: none;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+}
+
+.send {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #14b8a6, #22c55e);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.send svg {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 900px) {
+  .chatbot-shell {
+    padding: 24px;
+  }
+
+  .shell-main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

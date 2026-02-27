@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatar Chatbot – Multi‑Media Stage</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orbit" aria-hidden="true"></div>
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">A</div>
+        <div>
+          <div class="brand-title">Atlas Avatar</div>
+          <div class="brand-sub">Multimodal concierge</div>
+        </div>
+      </div>
+      <nav class="top-actions">
+        <button class="chip is-active">Live</button>
+        <button class="chip">Studio</button>
+        <button class="chip">Analytics</button>
+      </nav>
+      <div class="top-right">
+        <button class="ghost">Share</button>
+        <button class="primary">New Session</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="panel avatar">
+        <div class="panel-header">
+          <h2>Avatar</h2>
+          <span class="status">Ready</span>
+        </div>
+        <div class="avatar-stage">
+          <div class="avatar-ring"></div>
+          <div class="avatar-face">
+            <div class="avatar-eyes">
+              <span></span><span></span>
+            </div>
+            <div class="avatar-mouth"></div>
+          </div>
+          <div class="avatar-caption">Lip‑sync + gesture layer</div>
+        </div>
+        <div class="panel-block">
+          <div class="label">Mode</div>
+          <div class="segmented">
+            <button class="seg is-active">Guided</button>
+            <button class="seg">Exploratory</button>
+            <button class="seg">Silent</button>
+          </div>
+        </div>
+        <div class="panel-block">
+          <div class="label">Controls</div>
+          <div class="control-grid">
+            <button class="ghost">Calm</button>
+            <button class="ghost">Focus</button>
+            <button class="ghost">Reset</button>
+            <button class="ghost">Hand‑off</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel stage">
+        <div class="panel-header">
+          <h2>Content Stage</h2>
+          <div class="stage-tabs" role="tablist">
+            <button class="tab is-active" data-filter="all">All</button>
+            <button class="tab" data-filter="image">Photos</button>
+            <button class="tab" data-filter="video">Videos</button>
+            <button class="tab" data-filter="slides">Slides</button>
+            <button class="tab" data-filter="model">3D</button>
+          </div>
+        </div>
+
+        <div class="stage-view" id="stageView">
+          <div class="stage-placeholder">
+            <div class="stage-title">Select an asset to display</div>
+            <div class="stage-sub">The avatar speaks while the asset is shown — no descriptive text.</div>
+          </div>
+        </div>
+
+        <div class="shelf" id="assetShelf" aria-label="Asset shelf"></div>
+      </section>
+
+      <section class="panel chat">
+        <div class="panel-header">
+          <h2>Conversation</h2>
+          <span class="status">Session 04</span>
+        </div>
+        <div class="chat-feed" id="chatFeed">
+          <div class="msg avatar">
+            <div class="bubble">Hi! Ask for a product tour, training video, slide deck, or a 3D model.</div>
+          </div>
+          <div class="msg user">
+            <div class="bubble">Show the assembly steps and the exploded view.</div>
+          </div>
+          <div class="msg avatar">
+            <div class="bubble">On it. I’ll display the slides, then the model.</div>
+          </div>
+          <div class="msg avatar attachment">
+            <div class="asset-card" data-id="slides-1">
+              <div class="thumb slides"></div>
+              <div>
+                <div class="asset-title">Assembly Deck</div>
+                <div class="asset-meta">Slides • 18 frames</div>
+              </div>
+            </div>
+          </div>
+          <div class="msg avatar attachment">
+            <div class="asset-card" data-id="model-1">
+              <div class="thumb model"></div>
+              <div>
+                <div class="asset-title">Exploded View</div>
+                <div class="asset-meta">3D • GLB</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="composer">
+          <button class="ghost">+ Asset</button>
+          <input type="text" placeholder="Ask or drop an asset…" />
+          <button class="primary">Send</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
